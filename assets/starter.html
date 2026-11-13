@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小红书卡片 · 白底粉色定制模板</title>
+<style>
+:root{color-scheme:light;--paper:#f5f5f7;--ink:#1d1d1f;--muted:#68686d;--accent:#bd416f;--line:#dedee3}
+*{box-sizing:border-box}body{margin:0;padding:32px 20px 64px;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif}a{color:var(--accent)}button,a{touch-action:manipulation}button,.button{font:inherit;border:1px solid var(--line);border-radius:12px;padding:12px 18px;background:white;color:var(--ink);text-decoration:none;cursor:pointer;transition:background .15s}button:hover,.button:hover{background:#fbe5ee}button:active,.button:active{background:#f8e1eb}:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.toolbar,nav,.gallery,.sources{width:100%;max-width:1080px;margin:0 auto}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.toolbar h1{font-size:24px;margin:0 0 8px}.toolbar p{margin:0;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap}nav{display:flex;gap:14px;flex-wrap:wrap;padding:24px 0}nav a{font-size:15px}.sheet{margin:0 0 36px}.xhs-frame{width:100%;overflow:hidden;border-radius:8px;box-shadow:0 8px 36px #0000000a}.xhs-card{width:1080px;height:1440px;padding:68px 72px 48px;background:white;display:flex;flex-direction:column;transform-origin:top left;overflow:hidden}.masthead{display:flex;justify-content:space-between;gap:24px;color:var(--muted);font-size:23px;letter-spacing:1px}.category{color:var(--accent);text-align:right}.hero{margin:64px 0 42px}.hero h2{margin:0;font-size:94px;line-height:1.13;font-weight:650;letter-spacing:-4px;overflow-wrap:anywhere}.subtitle{font-size:32px;line-height:1.5;color:var(--muted);margin:25px 0 0}.content{display:flex;flex-direction:column;gap:26px;flex:1;min-height:0}.block{padding:34px 38px;border-radius:26px;background:var(--paper)}.block h3{font-size:38px;line-height:1.25;margin:0 0 16px;letter-spacing:-1px}.block p{font-size:30px;line-height:1.6;margin:0;color:#515157}.number{font-size:22px;color:var(--accent);margin-bottom:16px}.takeaway{margin-top:auto;border-top:2px solid var(--ink);padding-top:24px;font-size:34px;line-height:1.45;font-weight:550}.foot{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:19px;line-height:1.5;color:var(--muted)}.page-number{font-size:25px;white-space:nowrap;color:var(--ink)}.sheet-actions{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;padding-top:15px;font-size:14px}.sources{font-size:15px;line-height:1.7}.sources summary{cursor:pointer}
+body[data-view=read] .xhs-frame{height:auto!important;overflow:visible}body[data-view=read] .xhs-card{transform:none!important;width:100%;height:auto;min-height:0;padding:30px 24px;overflow:visible}body[data-view=read] .masthead{font-size:13px;letter-spacing:0}body[data-view=read] .hero{margin:32px 0 24px}body[data-view=read] .hero h2{font-size:clamp(34px,6vw,66px);letter-spacing:-1px}body[data-view=read] .subtitle{font-size:20px}body[data-view=read] .content{gap:18px}body[data-view=read] .block{padding:24px}body[data-view=read] .block h3{font-size:25px}body[data-view=read] .block p{font-size:18px}body[data-view=read] .number{font-size:15px}body[data-view=read] .takeaway{font-size:23px;margin-top:16px}body[data-view=read] .foot{font-size:12px}body[data-view=read] .page-number{font-size:17px}
+@media(max-width:600px){body{padding:20px 12px 40px}.toolbar h1{font-size:21px}.actions{gap:8px}.button,button{padding:10px 13px}.toolbar p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* User-approved style: white canvas, pink accents, one gray-white layer. */
+.xhs-card{padding:72px;background:#fff}
+.hero{margin:0 0 30px}
+.hero h2{font-size:76px;line-height:1.26;font-weight:700;letter-spacing:-2px;overflow-wrap:normal}
+.subtitle{font-size:30px;line-height:1.7;color:#424248;margin-top:26px}
+.block{padding:28px 30px;border-radius:20px}
+.block h3{font-size:36px;line-height:1.4;letter-spacing:0}
+.block p{font-size:30px;line-height:1.7;color:#424248}
+.number{color:var(--accent);font-size:25px}
+.takeaway{margin-top:0;border:0;padding-top:0;font-size:31px;line-height:1.65}
+.foot{height:0;min-height:0;flex:none;margin:0;padding:0;border:0}
+.summary{background:var(--paper);border-left:5px solid var(--accent);border-radius:20px;padding:22px 28px;font-size:30px;line-height:1.75}
+.test-label{font-size:28px;font-weight:700;color:var(--accent);margin-bottom:18px}
+.steps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:18px;font-size:30px;line-height:1.65}
+.steps li{display:grid;grid-template-columns:46px 1fr;gap:20px}
+.step-num{display:flex;align-items:center;justify-content:center;width:46px;height:46px;margin-top:3px;background:#fbe5ee;color:var(--accent);border-radius:50%;font-size:27px;font-weight:700}
+.figure{margin:0;display:flex;justify-content:center;flex-direction:column;gap:20px}
+.figure img{display:block;max-width:100%;height:auto;object-fit:contain;align-self:center}
+.figure figcaption{font-size:26px;line-height:1.6;color:#424248}
+body[data-view=read] .hero{margin:0 0 24px}
+body[data-view=read] .hero h2{font-size:clamp(32px,5.8vw,65px);line-height:1.3;letter-spacing:-1px}
+body[data-view=read] .summary{font-size:18px;padding:20px}
+body[data-view=read] .test-label{font-size:17px}
+body[data-view=read] .steps{font-size:18px;gap:20px}
+body[data-view=read] .steps li{grid-template-columns:28px 1fr;gap:12px}
+body[data-view=read] .step-num{width:28px;height:28px;font-size:16px}
+body[data-view=read] .figure figcaption{font-size:16px}
+body[data-view=read] .foot{height:0;margin:0;padding:0}
+</style>
+</head>
+<body data-view="card">
+<header class="toolbar"><div><h1>小红书图片 · 白底粉色模板</h1><p>1080 × 1440 · 可编辑的 HTML 卡片</p></div><div class="actions"><button id="view-toggle" type="button" aria-pressed="false">阅读模式</button><a class="button" data-xhs-download="zip" href="cards-jpg.zip" download="cards-jpg.zip">全部 JPG ↓</a></div></header>
+<nav aria-label="卡片目录"></nav>
+<main class="gallery">
+<section class="sheet" id="card-01"><div class="xhs-frame"><article class="xhs-card" data-title="内容与结构">
+<div class="hero"><h2>一个重点，<br>讲清一页。</h2><p class="subtitle">把复杂内容，整理成读者能带走的结论。</p></div>
+<div class="content">
+<section class="block"><div class="number">01 / 先写结论</div><h3>这一页，要让人记住什么？</h3><p>用一句话说出重点。标题负责吸引注意，正文负责解释原因和适用场景。</p></section>
+<section class="block"><div class="number">02 / 用例子解释</div><h3>让抽象概念有一个具体落点</h3><p>可以放一个案例、一组对照，或一条清晰的流程。内容多时拆页，留出阅读空间。</p></section>
+<div class="takeaway">少一点堆砌，多一点清楚。</div>
+</div>
+<footer class="foot" aria-hidden="true"></footer>
+</article></div><div class="sheet-actions"><span>01 · 内容与结构</span><a data-xhs-download="01" href="card-01.jpg" download="card-01.jpg">保存这张 JPG ↓</a></div></section>
+<section class="sheet" id="card-02"><div class="xhs-frame"><article class="xhs-card" data-title="证据与表达">
+<div class="hero"><h2>好看的图，<br>也要说准确。</h2><p class="subtitle">给出结论，也让读者看见适用边界。</p></div>
+<div class="content">
+<section class="block"><div class="number">01 / 信息有依据</div><h3>来源清楚，时间明确</h3><p>涉及价格、额度与产品能力时，核验官方页面。详细链接留在资料文档中。</p></section>
+<section class="block"><div class="number">02 / 比较有口径</div><h3>用同一道题，解释不同方案</h3><p>示意和实测需要区分；关键限制不能藏起来。让读者知道什么情况下可以照着用。</p></section>
+<div class="takeaway">能读懂，也能核对。</div>
+</div>
+<footer class="foot" aria-hidden="true"></footer>
+</article></div><div class="sheet-actions"><span>02 · 证据与表达</span><a data-xhs-download="02" href="card-02.jpg" download="card-02.jpg">保存这张 JPG ↓</a></div></section>
+</main>
+<details class="sources"><summary>来源与制作说明</summary><p>这是版式示例，制作时替换为实际参考资料、官方链接和核对日期。详细资料保存在同目录的 sources.md。</p></details>
+<script>
+const frames=[...document.querySelectorAll('.xhs-frame')];
+const cards=[...document.querySelectorAll('.xhs-card')];
+function fit(){for(const f of frames){const scale=f.clientWidth/1080;f.querySelector('.xhs-card').style.transform='scale('+scale+')';f.style.height=1440*scale+'px'}}
+const observer=new ResizeObserver(fit);frames.forEach(f=>observer.observe(f));fit();
+const toggle=document.querySelector('#view-toggle');
+toggle.addEventListener('click',()=>{const read=document.body.dataset.view!=='read';document.body.dataset.view=read?'read':'card';toggle.setAttribute('aria-pressed',String(read));toggle.textContent=read?'切回 3:4 卡片':'阅读模式';fit()});
+cards.forEach((card,i)=>{const link=document.createElement('a');link.href='#'+card.closest('.sheet').id;link.textContent=String(i+1).padStart(2,'0')+' '+card.dataset.title || card.querySelector('h2').textContent;document.querySelector('nav').append(link)});
+</script>
+</body>
+</html>

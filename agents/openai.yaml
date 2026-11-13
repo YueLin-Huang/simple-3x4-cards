@@ -1,0 +1,4 @@
+interface:
+  display_name: "3:4简约图文排版"
+  short_description: "白底、粉色强调与灰白引用块，制作三比四竖版图文卡片并导出图片和下载包"
+  default_prompt: "用 $simple-3x4-cards 将我提供的文案和图片排成 3:4 简约图文卡片。"
